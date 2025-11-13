@@ -51,8 +51,7 @@ function startTimer() {
       stopBtn.disabled = false;
       inputDate.disabled = true;
       currentDate += 1000;
-      let remainingTime = Math.floor(selectedDate - currentDate);
-      convertMs(remainingTime);
+      convertMs(Math.floor(selectedDate - currentDate));
     } else {
       clearInterval(intervalID);
       inputDate.disabled = false;
